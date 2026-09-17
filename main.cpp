@@ -128,17 +128,32 @@ int calculateRiskScore(
     return riskScore;
 }
 
+std::string makeDecision(int riskScore)
+{
+    if (riskScore < 30)
+    {
+        return "ALLOW";
+    }
+
+    if (riskScore < 60)
+    {
+        return "REQUIRE REAUTHENTICATION";
+    }
+
+    return "DENY";
+}
+
 int main()
 {
     AccessRequest request;
 
     request.ueId = "UE-001";
-    request.token = "invalid-token";
-    request.requestedService = "admin";
+    request.token = "valid-token-001";
+    request.requestedService = "telemetry";
     request.servingGnb = "gNB-01";
     request.satellite = "SAT-01";
     request.location = "Athens";
-    request.abnormalMobility = true;
+    request.abnormalMobility = false;
 
     bool identityValid = validateIdentity(request);
     bool tokenValid = validateToken(request);
@@ -149,6 +164,7 @@ int main()
         tokenValid,
         serviceAuthorized,
         ntnContextValid);
+    std::string decision = makeDecision(riskScore);
 
     std::cout << "Zero Trust NTN Gateway" << std::endl;
     std::cout << "UE: " << request.ueId << std::endl;
@@ -158,6 +174,7 @@ int main()
     std::cout << "Service authorized: " << serviceAuthorized << std::endl;
     std::cout << "NTN context valid: " << ntnContextValid << std::endl;
     std::cout << "Risk score: " << riskScore << std::endl;
+    std::cout << "Decision: " << decision << std::endl;
 
     return 0;
 }
