@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
 struct AccessRequest
 {
@@ -14,7 +15,20 @@ struct AccessRequest
 
 bool validateIdentity(const AccessRequest &request)
 {
-    return request.ueId == "UE-001";
+    std::vector<std::string> knownUes = {
+        "UE-001",
+        "UE-002",
+        "UE-003"};
+
+    for (const std::string &ue : knownUes)
+    {
+        if (ue == request.ueId)
+        {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 int main()

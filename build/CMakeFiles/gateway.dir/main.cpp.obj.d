@@ -141,4 +141,9 @@ CMakeFiles/gateway.dir/main.cpp.obj: \
  C:/Strawberry/c/include/c++/13.1.0/bits/basic_ios.tcc \
  C:/Strawberry/c/include/c++/13.1.0/bits/ostream.tcc \
  C:/Strawberry/c/include/c++/13.1.0/istream \
- C:/Strawberry/c/include/c++/13.1.0/bits/istream.tcc
+ C:/Strawberry/c/include/c++/13.1.0/bits/istream.tcc \
+ C:/Strawberry/c/include/c++/13.1.0/vector \
+ C:/Strawberry/c/include/c++/13.1.0/bits/stl_uninitialized.h \
+ C:/Strawberry/c/include/c++/13.1.0/bits/stl_vector.h \
+ C:/Strawberry/c/include/c++/13.1.0/bits/stl_bvector.h \
+ C:/Strawberry/c/include/c++/13.1.0/bits/vector.tcc

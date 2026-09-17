@@ -46,12 +46,15 @@ CMakeFiles/gateway.dir/main.cpp.obj
  C:/Strawberry/c/include/c++/13.1.0/bits/requires_hosted.h
  C:/Strawberry/c/include/c++/13.1.0/bits/std_abs.h
  C:/Strawberry/c/include/c++/13.1.0/bits/stl_algobase.h
+ C:/Strawberry/c/include/c++/13.1.0/bits/stl_bvector.h
  C:/Strawberry/c/include/c++/13.1.0/bits/stl_construct.h
  C:/Strawberry/c/include/c++/13.1.0/bits/stl_function.h
  C:/Strawberry/c/include/c++/13.1.0/bits/stl_iterator.h
  C:/Strawberry/c/include/c++/13.1.0/bits/stl_iterator_base_funcs.h
  C:/Strawberry/c/include/c++/13.1.0/bits/stl_iterator_base_types.h
  C:/Strawberry/c/include/c++/13.1.0/bits/stl_pair.h
+ C:/Strawberry/c/include/c++/13.1.0/bits/stl_uninitialized.h
+ C:/Strawberry/c/include/c++/13.1.0/bits/stl_vector.h
  C:/Strawberry/c/include/c++/13.1.0/bits/streambuf.tcc
  C:/Strawberry/c/include/c++/13.1.0/bits/streambuf_iterator.h
  C:/Strawberry/c/include/c++/13.1.0/bits/string_view.tcc
@@ -59,6 +62,7 @@ CMakeFiles/gateway.dir/main.cpp.obj
  C:/Strawberry/c/include/c++/13.1.0/bits/uses_allocator.h
  C:/Strawberry/c/include/c++/13.1.0/bits/uses_allocator_args.h
  C:/Strawberry/c/include/c++/13.1.0/bits/utility.h
+ C:/Strawberry/c/include/c++/13.1.0/bits/vector.tcc
  C:/Strawberry/c/include/c++/13.1.0/cctype
  C:/Strawberry/c/include/c++/13.1.0/cerrno
  C:/Strawberry/c/include/c++/13.1.0/clocale
@@ -92,6 +96,7 @@ CMakeFiles/gateway.dir/main.cpp.obj
  C:/Strawberry/c/include/c++/13.1.0/tuple
  C:/Strawberry/c/include/c++/13.1.0/type_traits
  C:/Strawberry/c/include/c++/13.1.0/typeinfo
+ C:/Strawberry/c/include/c++/13.1.0/vector
  C:/Strawberry/c/include/c++/13.1.0/x86_64-w64-mingw32/bits/atomic_word.h
  C:/Strawberry/c/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++allocator.h
  C:/Strawberry/c/include/c++/13.1.0/x86_64-w64-mingw32/bits/c++config.h
