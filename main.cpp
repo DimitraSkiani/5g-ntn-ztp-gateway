@@ -21,7 +21,7 @@ int main()
 {
     AccessRequest request;
 
-    request.ueId = "UE-001";
+    request.ueId = "UE-999";
     request.token = "valid-token";
     request.requestedService = "telemetry";
     request.servingGnb = "gNB-01";
