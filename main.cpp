@@ -42,10 +42,10 @@ void processRequest(const AccessRequest &request)
     std::cout << "Zero Trust NTN Gateway" << std::endl;
     std::cout << "UE: " << request.ueId << std::endl;
     std::cout << "Service: " << request.requestedService << std::endl;
-    std::cout << "Identity valid: " << identityValid << std::endl;
-    std::cout << "Token valid: " << tokenValid << std::endl;
-    std::cout << "Service authorized: " << serviceAuthorized << std::endl;
-    std::cout << "NTN context valid: " << ntnContextValid << std::endl;
+    std::cout << "Identity valid: " << (identityValid ? "YES" : "NO") << std::endl;
+    std::cout << "Token valid: " << (tokenValid ? "YES" : "NO") << std::endl;
+    std::cout << "Service authorized: " << (serviceAuthorized ? "YES" : "NO") << std::endl;
+    std::cout << "NTN context valid: " << (ntnContextValid ? "YES" : "NO") << std::endl;
     std::cout << "Risk score: " << riskScore << std::endl;
     std::cout << "Decision: " << decision << std::endl;
 }
