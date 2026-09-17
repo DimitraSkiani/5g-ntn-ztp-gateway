@@ -128,19 +128,29 @@ int calculateRiskScore(
     return riskScore;
 }
 
-std::string makeDecision(int riskScore)
+std::string makeDecision(
+    int riskScore,
+    bool identityValid,
+    bool tokenValid,
+    bool serviceAuthorized,
+    bool ntnContextValid)
 {
-    if (riskScore < 30)
+    if (!identityValid || !tokenValid || !serviceAuthorized)
     {
-        return "ALLOW";
+        return "DENY";
     }
 
-    if (riskScore < 60)
+    if (!ntnContextValid && riskScore < 60)
     {
         return "REQUIRE REAUTHENTICATION";
     }
 
-    return "DENY";
+    if (riskScore >= 60)
+    {
+        return "DENY";
+    }
+
+    return "ALLOW";
 }
 
 int main()
@@ -153,7 +163,7 @@ int main()
     request.servingGnb = "gNB-01";
     request.satellite = "SAT-01";
     request.location = "Athens";
-    request.abnormalMobility = false;
+    request.abnormalMobility = true;
 
     bool identityValid = validateIdentity(request);
     bool tokenValid = validateToken(request);
@@ -164,7 +174,12 @@ int main()
         tokenValid,
         serviceAuthorized,
         ntnContextValid);
-    std::string decision = makeDecision(riskScore);
+    std::string decision = makeDecision(
+        riskScore,
+        identityValid,
+        tokenValid,
+        serviceAuthorized,
+        ntnContextValid);
 
     std::cout << "Zero Trust NTN Gateway" << std::endl;
     std::cout << "UE: " << request.ueId << std::endl;
