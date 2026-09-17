@@ -1,1 +1,1 @@
-CMakeFiles/gateway.dir/main.cpp.obj
+CMakeFiles/gateway.dir/main.cpp.obj CMakeFiles/gateway.dir/src/security/SecurityChecks.cpp.obj CMakeFiles/gateway.dir/src/risk/RiskEngine.cpp.obj CMakeFiles/gateway.dir/src/decision/DecisionEngine.cpp.obj CMakeFiles/gateway.dir/src/logging/AuditLogger.cpp.obj

@@ -152,6 +152,102 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\gateway.dir\build.make CMakeFiles/gateway.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/decision/DecisionEngine.obj: src/decision/DecisionEngine.cpp.obj
+.PHONY : src/decision/DecisionEngine.obj
+
+# target to build an object file
+src/decision/DecisionEngine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gateway.dir\build.make CMakeFiles/gateway.dir/src/decision/DecisionEngine.cpp.obj
+.PHONY : src/decision/DecisionEngine.cpp.obj
+
+src/decision/DecisionEngine.i: src/decision/DecisionEngine.cpp.i
+.PHONY : src/decision/DecisionEngine.i
+
+# target to preprocess a source file
+src/decision/DecisionEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gateway.dir\build.make CMakeFiles/gateway.dir/src/decision/DecisionEngine.cpp.i
+.PHONY : src/decision/DecisionEngine.cpp.i
+
+src/decision/DecisionEngine.s: src/decision/DecisionEngine.cpp.s
+.PHONY : src/decision/DecisionEngine.s
+
+# target to generate assembly for a file
+src/decision/DecisionEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gateway.dir\build.make CMakeFiles/gateway.dir/src/decision/DecisionEngine.cpp.s
+.PHONY : src/decision/DecisionEngine.cpp.s
+
+src/logging/AuditLogger.obj: src/logging/AuditLogger.cpp.obj
+.PHONY : src/logging/AuditLogger.obj
+
+# target to build an object file
+src/logging/AuditLogger.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gateway.dir\build.make CMakeFiles/gateway.dir/src/logging/AuditLogger.cpp.obj
+.PHONY : src/logging/AuditLogger.cpp.obj
+
+src/logging/AuditLogger.i: src/logging/AuditLogger.cpp.i
+.PHONY : src/logging/AuditLogger.i
+
+# target to preprocess a source file
+src/logging/AuditLogger.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gateway.dir\build.make CMakeFiles/gateway.dir/src/logging/AuditLogger.cpp.i
+.PHONY : src/logging/AuditLogger.cpp.i
+
+src/logging/AuditLogger.s: src/logging/AuditLogger.cpp.s
+.PHONY : src/logging/AuditLogger.s
+
+# target to generate assembly for a file
+src/logging/AuditLogger.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gateway.dir\build.make CMakeFiles/gateway.dir/src/logging/AuditLogger.cpp.s
+.PHONY : src/logging/AuditLogger.cpp.s
+
+src/risk/RiskEngine.obj: src/risk/RiskEngine.cpp.obj
+.PHONY : src/risk/RiskEngine.obj
+
+# target to build an object file
+src/risk/RiskEngine.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gateway.dir\build.make CMakeFiles/gateway.dir/src/risk/RiskEngine.cpp.obj
+.PHONY : src/risk/RiskEngine.cpp.obj
+
+src/risk/RiskEngine.i: src/risk/RiskEngine.cpp.i
+.PHONY : src/risk/RiskEngine.i
+
+# target to preprocess a source file
+src/risk/RiskEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gateway.dir\build.make CMakeFiles/gateway.dir/src/risk/RiskEngine.cpp.i
+.PHONY : src/risk/RiskEngine.cpp.i
+
+src/risk/RiskEngine.s: src/risk/RiskEngine.cpp.s
+.PHONY : src/risk/RiskEngine.s
+
+# target to generate assembly for a file
+src/risk/RiskEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gateway.dir\build.make CMakeFiles/gateway.dir/src/risk/RiskEngine.cpp.s
+.PHONY : src/risk/RiskEngine.cpp.s
+
+src/security/SecurityChecks.obj: src/security/SecurityChecks.cpp.obj
+.PHONY : src/security/SecurityChecks.obj
+
+# target to build an object file
+src/security/SecurityChecks.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gateway.dir\build.make CMakeFiles/gateway.dir/src/security/SecurityChecks.cpp.obj
+.PHONY : src/security/SecurityChecks.cpp.obj
+
+src/security/SecurityChecks.i: src/security/SecurityChecks.cpp.i
+.PHONY : src/security/SecurityChecks.i
+
+# target to preprocess a source file
+src/security/SecurityChecks.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gateway.dir\build.make CMakeFiles/gateway.dir/src/security/SecurityChecks.cpp.i
+.PHONY : src/security/SecurityChecks.cpp.i
+
+src/security/SecurityChecks.s: src/security/SecurityChecks.cpp.s
+.PHONY : src/security/SecurityChecks.s
+
+# target to generate assembly for a file
+src/security/SecurityChecks.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\gateway.dir\build.make CMakeFiles/gateway.dir/src/security/SecurityChecks.cpp.s
+.PHONY : src/security/SecurityChecks.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +260,18 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/decision/DecisionEngine.obj
+	@echo ... src/decision/DecisionEngine.i
+	@echo ... src/decision/DecisionEngine.s
+	@echo ... src/logging/AuditLogger.obj
+	@echo ... src/logging/AuditLogger.i
+	@echo ... src/logging/AuditLogger.s
+	@echo ... src/risk/RiskEngine.obj
+	@echo ... src/risk/RiskEngine.i
+	@echo ... src/risk/RiskEngine.s
+	@echo ... src/security/SecurityChecks.obj
+	@echo ... src/security/SecurityChecks.i
+	@echo ... src/security/SecurityChecks.s
 .PHONY : help
 
 

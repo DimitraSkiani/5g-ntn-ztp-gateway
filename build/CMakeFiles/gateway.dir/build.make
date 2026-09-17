@@ -72,6 +72,7 @@ CMakeFiles/gateway.dir/codegen:
 .PHONY : CMakeFiles/gateway.dir/codegen
 
 CMakeFiles/gateway.dir/main.cpp.obj: CMakeFiles/gateway.dir/flags.make
+CMakeFiles/gateway.dir/main.cpp.obj: CMakeFiles/gateway.dir/includes_CXX.rsp
 CMakeFiles/gateway.dir/main.cpp.obj: C:/Users/ph443/5g-ntn-ztp-gateway/main.cpp
 CMakeFiles/gateway.dir/main.cpp.obj: CMakeFiles/gateway.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ph443\5g-ntn-ztp-gateway\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/gateway.dir/main.cpp.obj"
@@ -85,19 +86,87 @@ CMakeFiles/gateway.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/main.cpp.s"
 	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ph443\5g-ntn-ztp-gateway\main.cpp -o CMakeFiles\gateway.dir\main.cpp.s
 
+CMakeFiles/gateway.dir/src/security/SecurityChecks.cpp.obj: CMakeFiles/gateway.dir/flags.make
+CMakeFiles/gateway.dir/src/security/SecurityChecks.cpp.obj: CMakeFiles/gateway.dir/includes_CXX.rsp
+CMakeFiles/gateway.dir/src/security/SecurityChecks.cpp.obj: C:/Users/ph443/5g-ntn-ztp-gateway/src/security/SecurityChecks.cpp
+CMakeFiles/gateway.dir/src/security/SecurityChecks.cpp.obj: CMakeFiles/gateway.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ph443\5g-ntn-ztp-gateway\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/gateway.dir/src/security/SecurityChecks.cpp.obj"
+	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/security/SecurityChecks.cpp.obj -MF CMakeFiles\gateway.dir\src\security\SecurityChecks.cpp.obj.d -o CMakeFiles\gateway.dir\src\security\SecurityChecks.cpp.obj -c C:\Users\ph443\5g-ntn-ztp-gateway\src\security\SecurityChecks.cpp
+
+CMakeFiles/gateway.dir/src/security/SecurityChecks.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/src/security/SecurityChecks.cpp.i"
+	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ph443\5g-ntn-ztp-gateway\src\security\SecurityChecks.cpp > CMakeFiles\gateway.dir\src\security\SecurityChecks.cpp.i
+
+CMakeFiles/gateway.dir/src/security/SecurityChecks.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/src/security/SecurityChecks.cpp.s"
+	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ph443\5g-ntn-ztp-gateway\src\security\SecurityChecks.cpp -o CMakeFiles\gateway.dir\src\security\SecurityChecks.cpp.s
+
+CMakeFiles/gateway.dir/src/risk/RiskEngine.cpp.obj: CMakeFiles/gateway.dir/flags.make
+CMakeFiles/gateway.dir/src/risk/RiskEngine.cpp.obj: CMakeFiles/gateway.dir/includes_CXX.rsp
+CMakeFiles/gateway.dir/src/risk/RiskEngine.cpp.obj: C:/Users/ph443/5g-ntn-ztp-gateway/src/risk/RiskEngine.cpp
+CMakeFiles/gateway.dir/src/risk/RiskEngine.cpp.obj: CMakeFiles/gateway.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ph443\5g-ntn-ztp-gateway\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/gateway.dir/src/risk/RiskEngine.cpp.obj"
+	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/risk/RiskEngine.cpp.obj -MF CMakeFiles\gateway.dir\src\risk\RiskEngine.cpp.obj.d -o CMakeFiles\gateway.dir\src\risk\RiskEngine.cpp.obj -c C:\Users\ph443\5g-ntn-ztp-gateway\src\risk\RiskEngine.cpp
+
+CMakeFiles/gateway.dir/src/risk/RiskEngine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/src/risk/RiskEngine.cpp.i"
+	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ph443\5g-ntn-ztp-gateway\src\risk\RiskEngine.cpp > CMakeFiles\gateway.dir\src\risk\RiskEngine.cpp.i
+
+CMakeFiles/gateway.dir/src/risk/RiskEngine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/src/risk/RiskEngine.cpp.s"
+	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ph443\5g-ntn-ztp-gateway\src\risk\RiskEngine.cpp -o CMakeFiles\gateway.dir\src\risk\RiskEngine.cpp.s
+
+CMakeFiles/gateway.dir/src/decision/DecisionEngine.cpp.obj: CMakeFiles/gateway.dir/flags.make
+CMakeFiles/gateway.dir/src/decision/DecisionEngine.cpp.obj: CMakeFiles/gateway.dir/includes_CXX.rsp
+CMakeFiles/gateway.dir/src/decision/DecisionEngine.cpp.obj: C:/Users/ph443/5g-ntn-ztp-gateway/src/decision/DecisionEngine.cpp
+CMakeFiles/gateway.dir/src/decision/DecisionEngine.cpp.obj: CMakeFiles/gateway.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ph443\5g-ntn-ztp-gateway\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/gateway.dir/src/decision/DecisionEngine.cpp.obj"
+	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/decision/DecisionEngine.cpp.obj -MF CMakeFiles\gateway.dir\src\decision\DecisionEngine.cpp.obj.d -o CMakeFiles\gateway.dir\src\decision\DecisionEngine.cpp.obj -c C:\Users\ph443\5g-ntn-ztp-gateway\src\decision\DecisionEngine.cpp
+
+CMakeFiles/gateway.dir/src/decision/DecisionEngine.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/src/decision/DecisionEngine.cpp.i"
+	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ph443\5g-ntn-ztp-gateway\src\decision\DecisionEngine.cpp > CMakeFiles\gateway.dir\src\decision\DecisionEngine.cpp.i
+
+CMakeFiles/gateway.dir/src/decision/DecisionEngine.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/src/decision/DecisionEngine.cpp.s"
+	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ph443\5g-ntn-ztp-gateway\src\decision\DecisionEngine.cpp -o CMakeFiles\gateway.dir\src\decision\DecisionEngine.cpp.s
+
+CMakeFiles/gateway.dir/src/logging/AuditLogger.cpp.obj: CMakeFiles/gateway.dir/flags.make
+CMakeFiles/gateway.dir/src/logging/AuditLogger.cpp.obj: CMakeFiles/gateway.dir/includes_CXX.rsp
+CMakeFiles/gateway.dir/src/logging/AuditLogger.cpp.obj: C:/Users/ph443/5g-ntn-ztp-gateway/src/logging/AuditLogger.cpp
+CMakeFiles/gateway.dir/src/logging/AuditLogger.cpp.obj: CMakeFiles/gateway.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\ph443\5g-ntn-ztp-gateway\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/gateway.dir/src/logging/AuditLogger.cpp.obj"
+	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/gateway.dir/src/logging/AuditLogger.cpp.obj -MF CMakeFiles\gateway.dir\src\logging\AuditLogger.cpp.obj.d -o CMakeFiles\gateway.dir\src\logging\AuditLogger.cpp.obj -c C:\Users\ph443\5g-ntn-ztp-gateway\src\logging\AuditLogger.cpp
+
+CMakeFiles/gateway.dir/src/logging/AuditLogger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gateway.dir/src/logging/AuditLogger.cpp.i"
+	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ph443\5g-ntn-ztp-gateway\src\logging\AuditLogger.cpp > CMakeFiles\gateway.dir\src\logging\AuditLogger.cpp.i
+
+CMakeFiles/gateway.dir/src/logging/AuditLogger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gateway.dir/src/logging/AuditLogger.cpp.s"
+	C:\Strawberry\c\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ph443\5g-ntn-ztp-gateway\src\logging\AuditLogger.cpp -o CMakeFiles\gateway.dir\src\logging\AuditLogger.cpp.s
+
 # Object files for target gateway
 gateway_OBJECTS = \
-"CMakeFiles/gateway.dir/main.cpp.obj"
+"CMakeFiles/gateway.dir/main.cpp.obj" \
+"CMakeFiles/gateway.dir/src/security/SecurityChecks.cpp.obj" \
+"CMakeFiles/gateway.dir/src/risk/RiskEngine.cpp.obj" \
+"CMakeFiles/gateway.dir/src/decision/DecisionEngine.cpp.obj" \
+"CMakeFiles/gateway.dir/src/logging/AuditLogger.cpp.obj"
 
 # External object files for target gateway
 gateway_EXTERNAL_OBJECTS =
 
 gateway.exe: CMakeFiles/gateway.dir/main.cpp.obj
+gateway.exe: CMakeFiles/gateway.dir/src/security/SecurityChecks.cpp.obj
+gateway.exe: CMakeFiles/gateway.dir/src/risk/RiskEngine.cpp.obj
+gateway.exe: CMakeFiles/gateway.dir/src/decision/DecisionEngine.cpp.obj
+gateway.exe: CMakeFiles/gateway.dir/src/logging/AuditLogger.cpp.obj
 gateway.exe: CMakeFiles/gateway.dir/build.make
 gateway.exe: CMakeFiles/gateway.dir/linkLibs.rsp
 gateway.exe: CMakeFiles/gateway.dir/objects1.rsp
 gateway.exe: CMakeFiles/gateway.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ph443\5g-ntn-ztp-gateway\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable gateway.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\ph443\5g-ntn-ztp-gateway\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable gateway.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gateway.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

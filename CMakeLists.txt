@@ -11,4 +11,12 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(gateway
     main.cpp
+    src/security/SecurityChecks.cpp
+    src/risk/RiskEngine.cpp
+    src/decision/DecisionEngine.cpp
+    src/logging/AuditLogger.cpp
+)
+
+target_include_directories(gateway PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
