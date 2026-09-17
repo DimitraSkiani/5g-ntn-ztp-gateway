@@ -153,6 +153,19 @@ std::string makeDecision(
     return "ALLOW";
 }
 
+void logAccessDecision(
+    const AccessRequest &request,
+    int riskScore,
+    const std::string &decision)
+{
+    std::cout << "AUDIT LOG" << std::endl;
+    std::cout << "UE=" << request.ueId
+              << " SERVICE=" << request.requestedService
+              << " RISK=" << riskScore
+              << " DECISION=" << decision
+              << std::endl;
+}
+
 int main()
 {
     AccessRequest request;
@@ -180,6 +193,7 @@ int main()
         tokenValid,
         serviceAuthorized,
         ntnContextValid);
+    logAccessDecision(request, riskScore, decision);
 
     std::cout << "Zero Trust NTN Gateway" << std::endl;
     std::cout << "UE: " << request.ueId << std::endl;
