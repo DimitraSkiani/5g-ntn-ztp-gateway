@@ -82,9 +82,20 @@ int main()
     invalidTokenRequest.location = "Athens";
     invalidTokenRequest.abnormalMobility = false;
 
+    AccessRequest unauthorizedServiceRequest;
+
+    unauthorizedServiceRequest.ueId = "UE-001";
+    unauthorizedServiceRequest.token = "valid-token-001";
+    unauthorizedServiceRequest.requestedService = "admin";
+    unauthorizedServiceRequest.servingGnb = "gNB-01";
+    unauthorizedServiceRequest.satellite = "SAT-01";
+    unauthorizedServiceRequest.location = "Athens";
+    unauthorizedServiceRequest.abnormalMobility = false;
+
     processRequest(request);
     processRequest(normalRequest);
     processRequest(invalidTokenRequest);
+    processRequest(unauthorizedServiceRequest);
 
     return 0;
 }
