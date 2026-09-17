@@ -34,6 +34,7 @@ int main()
     std::cout << "Zero Trust NTN Gateway" << std::endl;
     std::cout << "UE: " << request.ueId << std::endl;
     std::cout << "Service: " << request.requestedService << std::endl;
+    std::cout << "Identity valid: " << identityValid << std::endl;
 
     return 0;
 }
