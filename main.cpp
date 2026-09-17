@@ -72,8 +72,19 @@ int main()
     normalRequest.location = "Athens";
     normalRequest.abnormalMobility = false;
 
+    AccessRequest invalidTokenRequest;
+
+    invalidTokenRequest.ueId = "UE-001";
+    invalidTokenRequest.token = "invalid-token";
+    invalidTokenRequest.requestedService = "telemetry";
+    invalidTokenRequest.servingGnb = "gNB-01";
+    invalidTokenRequest.satellite = "SAT-01";
+    invalidTokenRequest.location = "Athens";
+    invalidTokenRequest.abnormalMobility = false;
+
     processRequest(request);
     processRequest(normalRequest);
+    processRequest(invalidTokenRequest);
 
     return 0;
 }
