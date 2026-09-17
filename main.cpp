@@ -72,6 +72,31 @@ bool isServiceAuthorized(const AccessRequest &request)
     return false;
 }
 
+bool validateNtnContext(const AccessRequest &request)
+{
+    if (request.servingGnb != "gNB-01")
+    {
+        return false;
+    }
+
+    if (request.satellite != "SAT-01")
+    {
+        return false;
+    }
+
+    if (request.location != "Athens")
+    {
+        return false;
+    }
+
+    if (request.abnormalMobility)
+    {
+        return false;
+    }
+
+    return true;
+}
+
 int main()
 {
     AccessRequest request;
@@ -82,11 +107,12 @@ int main()
     request.servingGnb = "gNB-01";
     request.satellite = "SAT-01";
     request.location = "Athens";
-    request.abnormalMobility = false;
+    request.abnormalMobility = true;
 
     bool identityValid = validateIdentity(request);
     bool tokenValid = validateToken(request);
     bool serviceAuthorized = isServiceAuthorized(request);
+    bool ntnContextValid = validateNtnContext(request);
 
     std::cout << "Zero Trust NTN Gateway" << std::endl;
     std::cout << "UE: " << request.ueId << std::endl;
@@ -94,6 +120,7 @@ int main()
     std::cout << "Identity valid: " << identityValid << std::endl;
     std::cout << "Token valid: " << tokenValid << std::endl;
     std::cout << "Service authorized: " << serviceAuthorized << std::endl;
+    std::cout << "NTN context valid: " << ntnContextValid << std::endl;
 
     return 0;
 }
