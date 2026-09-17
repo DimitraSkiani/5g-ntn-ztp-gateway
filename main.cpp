@@ -49,13 +49,36 @@ bool validateToken(const AccessRequest &request)
     return false;
 }
 
+bool isServiceAuthorized(const AccessRequest &request)
+{
+    if (request.ueId == "UE-001" &&
+        request.requestedService == "telemetry")
+    {
+        return true;
+    }
+
+    if (request.ueId == "UE-001" &&
+        request.requestedService == "diagnostics")
+    {
+        return true;
+    }
+
+    if (request.ueId == "UE-002" &&
+        request.requestedService == "telemetry")
+    {
+        return true;
+    }
+
+    return false;
+}
+
 int main()
 {
     AccessRequest request;
 
-    request.ueId = "UE-999";
+    request.ueId = "UE-001";
     request.token = "valid-token-001";
-    request.requestedService = "telemetry";
+    request.requestedService = "admin";
     request.servingGnb = "gNB-01";
     request.satellite = "SAT-01";
     request.location = "Athens";
@@ -63,12 +86,14 @@ int main()
 
     bool identityValid = validateIdentity(request);
     bool tokenValid = validateToken(request);
+    bool serviceAuthorized = isServiceAuthorized(request);
 
     std::cout << "Zero Trust NTN Gateway" << std::endl;
     std::cout << "UE: " << request.ueId << std::endl;
     std::cout << "Service: " << request.requestedService << std::endl;
     std::cout << "Identity valid: " << identityValid << std::endl;
     std::cout << "Token valid: " << tokenValid << std::endl;
+    std::cout << "Service authorized: " << serviceAuthorized << std::endl;
 
     return 0;
 }
