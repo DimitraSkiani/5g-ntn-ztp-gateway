@@ -97,12 +97,43 @@ bool validateNtnContext(const AccessRequest &request)
     return true;
 }
 
+int calculateRiskScore(
+    bool identityValid,
+    bool tokenValid,
+    bool serviceAuthorized,
+    bool ntnContextValid)
+{
+    int riskScore = 0;
+
+    if (!identityValid)
+    {
+        riskScore += 40;
+    }
+
+    if (!tokenValid)
+    {
+        riskScore += 50;
+    }
+
+    if (!serviceAuthorized)
+    {
+        riskScore += 40;
+    }
+
+    if (!ntnContextValid)
+    {
+        riskScore += 20;
+    }
+
+    return riskScore;
+}
+
 int main()
 {
     AccessRequest request;
 
     request.ueId = "UE-001";
-    request.token = "valid-token-001";
+    request.token = "invalid-token";
     request.requestedService = "admin";
     request.servingGnb = "gNB-01";
     request.satellite = "SAT-01";
@@ -113,6 +144,11 @@ int main()
     bool tokenValid = validateToken(request);
     bool serviceAuthorized = isServiceAuthorized(request);
     bool ntnContextValid = validateNtnContext(request);
+    int riskScore = calculateRiskScore(
+        identityValid,
+        tokenValid,
+        serviceAuthorized,
+        ntnContextValid);
 
     std::cout << "Zero Trust NTN Gateway" << std::endl;
     std::cout << "UE: " << request.ueId << std::endl;
@@ -121,6 +157,7 @@ int main()
     std::cout << "Token valid: " << tokenValid << std::endl;
     std::cout << "Service authorized: " << serviceAuthorized << std::endl;
     std::cout << "NTN context valid: " << ntnContextValid << std::endl;
+    std::cout << "Risk score: " << riskScore << std::endl;
 
     return 0;
 }
