@@ -10,22 +10,22 @@ int calculateRiskScore(
 
     if (!identityValid)
     {
-        riskScore += 40;
+        riskScore += INVALID_IDENTITY_RISK;
     }
 
     if (!tokenValid)
     {
-        riskScore += 50;
+        riskScore += INVALID_TOKEN_RISK;
     }
 
     if (!serviceAuthorized)
     {
-        riskScore += 40;
+        riskScore += UNAUTHORIZED_SERVICE_RISK;
     }
 
     if (!ntnContextValid)
     {
-        riskScore += 20;
+        riskScore += INVALID_NTN_CONTEXT_RISK;
     }
 
     return riskScore;

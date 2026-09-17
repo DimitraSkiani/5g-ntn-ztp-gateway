@@ -17,7 +17,7 @@ std::string makeDecision(
         return "REQUIRE REAUTHENTICATION";
     }
 
-    if (riskScore >= 60)
+    if (riskScore >= DENY_RISK_THRESHOLD)
     {
         return "DENY";
     }

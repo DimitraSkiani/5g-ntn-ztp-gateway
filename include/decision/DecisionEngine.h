@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+constexpr int DENY_RISK_THRESHOLD = 60;
 
 std::string makeDecision(
     int riskScore,
