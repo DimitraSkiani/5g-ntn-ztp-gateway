@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\gateway.dir/objects.a
+C:\Strawberry\c\bin\ar.exe qc CMakeFiles\gateway.dir/objects.a @CMakeFiles\gateway.dir\objects1.rsp
+C:\Strawberry\c\bin\c++.exe -Wl,--whole-archive CMakeFiles\gateway.dir/objects.a -Wl,--no-whole-archive -o gateway.exe -Wl,--out-implib,libgateway.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\gateway.dir\linkLibs.rsp
