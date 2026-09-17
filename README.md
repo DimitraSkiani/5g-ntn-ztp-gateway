@@ -18,6 +18,34 @@ The project is implemented in C++17.
 
 The gateway follows a simple Zero Trust request evaluation flow:
 
+Simulated UE Access Request
+        |
+        v
+ Zero Trust Gateway  
+        |
+        v
+Identity Validation
+        |
+        v
+Token Validation
+        |
+        v
+Service Authorization
+        |
+        v
+NTN Context Validation
+        |
+        v
+Risk Scoring
+        |
+        v
+Decision Engine
+        |
+        v
+Audit Logging
+        |
+        v
+ALLOW / DENY / REQUIRE REAUTHENTICATION
 
 The gateway acts as the Policy Enforcement Point (PEP). The access decision is based on the results of the security checks and the calculated risk score.
 
