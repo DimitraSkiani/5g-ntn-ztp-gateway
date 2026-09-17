@@ -12,6 +12,11 @@ struct AccessRequest
     bool abnormalMobility;
 };
 
+bool validateIdentity(const AccessRequest &request)
+{
+    return request.ueId == "UE-001";
+}
+
 int main()
 {
     AccessRequest request;
@@ -23,6 +28,8 @@ int main()
     request.satellite = "SAT-01";
     request.location = "Athens";
     request.abnormalMobility = false;
+
+    bool identityValid = validateIdentity(request);
 
     std::cout << "Zero Trust NTN Gateway" << std::endl;
     std::cout << "UE: " << request.ueId << std::endl;
