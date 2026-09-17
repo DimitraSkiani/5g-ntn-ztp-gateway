@@ -73,6 +73,7 @@ int main()
     normalRequest.abnormalMobility = false;
 
     processRequest(request);
+    processRequest(normalRequest);
 
     return 0;
 }
