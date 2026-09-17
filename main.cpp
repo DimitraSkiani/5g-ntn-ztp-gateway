@@ -153,16 +153,47 @@ std::string makeDecision(
     return "ALLOW";
 }
 
+std::string getDecisionReason(
+    bool identityValid,
+    bool tokenValid,
+    bool serviceAuthorized,
+    bool ntnContextValid)
+{
+    if (!identityValid)
+    {
+        return "Invalid UE identity";
+    }
+
+    if (!tokenValid)
+    {
+        return "Invalid token";
+    }
+
+    if (!serviceAuthorized)
+    {
+        return "Unauthorized service";
+    }
+
+    if (!ntnContextValid)
+    {
+        return "Abnormal NTN context";
+    }
+
+    return "All security checks passed";
+}
+
 void logAccessDecision(
     const AccessRequest &request,
     int riskScore,
-    const std::string &decision)
+    const std::string &decision,
+    const std::string &reason)
 {
     std::cout << "AUDIT LOG" << std::endl;
     std::cout << "UE=" << request.ueId
               << " SERVICE=" << request.requestedService
               << " RISK=" << riskScore
               << " DECISION=" << decision
+              << " REASON=" << reason
               << std::endl;
 }
 
@@ -193,7 +224,12 @@ int main()
         tokenValid,
         serviceAuthorized,
         ntnContextValid);
-    logAccessDecision(request, riskScore, decision);
+    std::string reason = getDecisionReason(
+        identityValid,
+        tokenValid,
+        serviceAuthorized,
+        ntnContextValid);
+    logAccessDecision(request, riskScore, decision, reason);
 
     std::cout << "Zero Trust NTN Gateway" << std::endl;
     std::cout << "UE: " << request.ueId << std::endl;
